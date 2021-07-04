@@ -1,0 +1,21 @@
+{
+  "name": "@solv/v2-voucher-monorepo",
+  "version": "1.0.0",
+  "repository": "git@github.com:solv-finance/solv-v2-voucher.git",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=12.10"
+  },
+  "contributors": [
+    "Ethan Y. Tsai <ethan@solv.finance>"
+  ],
+  "scripts": {
+    "build": "yarn workspaces foreach --verbose run build",
+    "lint": "yarn workspaces foreach --verbose run lint",
+    "test": "yarn workspaces foreach --parallel --verbose run test"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

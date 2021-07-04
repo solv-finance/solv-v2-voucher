@@ -1,0 +1,7 @@
+{
+  "solidity-va.deco.statevars": false,
+  "solidity-va.deco.arguments": false,
+  "solidity-va.hover": false,
+  "solidity-va.outline.enable": false,
+  "solidity-va.outline.decorations": false
+}
