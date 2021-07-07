@@ -231,13 +231,15 @@ contract ICToken is IICToken, IVNFTErc20Container, VNFTCore {
         virtual
         override
     {
+        address tokenOwner = ERC721Upgradeable.ownerOf((tokenId_));
         uint256 rechargeUnits = vestingPool.recharge(
             msg.sender,
+            tokenOwner,
             tokenId_,
             amount_
         );
         uint256 slot = VNFTCore.slotOf(tokenId_);
-        VNFTCore._mintUnits(msg.sender, tokenId_, slot, rechargeUnits);
+        VNFTCore._mintUnits(tokenOwner, tokenId_, slot, rechargeUnits);
     }
 
     function split(uint256 tokenId_, uint256[] calldata splitUnits_)

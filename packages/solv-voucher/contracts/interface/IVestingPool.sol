@@ -21,7 +21,8 @@ interface IVestingPool {
         uint256 claimAmount
     );
     event RechargeVesting(
-        address indexed minter,
+        address indexed recharger,
+        address indexed owner,
         uint256 indexed tokenId,
         uint256 rechargeVestingAmount,
         uint256 rechargePrincipal
@@ -70,8 +71,9 @@ interface IVestingPool {
         view
         returns (uint256);
 
-    function recharge(address minter_, uint256 tokenId_, uint256 amount_) 
-        external returns (uint256);
+    function recharge(address recharger_, address owner_, uint256 tokenId_, uint256 amount_) 
+        external 
+        returns (uint256);
 
     function transferVesting(
         address from_,

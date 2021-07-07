@@ -170,15 +170,16 @@ contract VestingPool is IVestingPool {
     }
 
     function recharge(
-        address minter_,
+        address recharger_,
+        address owner_,
         uint256 tokenId_,
         uint256 amount_
     ) external virtual override onlyManager returns (uint256) {
-        ERC20TransferHelper.doTransferIn(_underlying, minter_, amount_);
+        ERC20TransferHelper.doTransferIn(_underlying, recharger_, amount_);
         VestingLibrary.Vesting storage vesting = vestingById[tokenId_];
         vesting.recharge(amount_);
 
-        emit RechargeVesting(minter_, tokenId_, amount_, amount_);
+        emit RechargeVesting(recharger_, owner_, tokenId_, amount_, amount_);
 
         _totalAmount = _totalAmount.add(amount_);
         uint256 rechargeUnits = amount2units(amount_);
