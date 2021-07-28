@@ -6,7 +6,7 @@ This package contains the source code of the core interfaces of the `VNFT` proto
 
 - [IVNFT] (./contracts/interface/IVNFT.sol): 
 
-	- `IVNFT` defines all interfaces and events for the standard VNFT protocol, which should be implemented in order to create a new VNFT token.
+	- `IVNFT` defines all interfaces and events for the standard VNFT protocol, which must be implemented for creating a new VNFT token.
 	
 - [VNFTCore](./contracts/VNFTCore.sol):
 
@@ -14,4 +14,4 @@ This package contains the source code of the core interfaces of the `VNFT` proto
 	 
 - [AssetLibrary](./contracts/library/AssetLibrary.sol):
 	
-	- `AssetLibrary` describes the structure and the logic implementation of the underlying assets, including minting, burning, merging and transferring, etc.
+	- `AssetLibrary` describes the data structure and the internal logic of the underlying assets, including minting, burning, merging and transferring, etc.

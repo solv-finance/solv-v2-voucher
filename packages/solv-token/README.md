@@ -1,6 +1,6 @@
 # solv-token
 
-This package contains the source code for the creation of the standard ERC-20 `SOLV` token, with the basic attributes as follows:
+This package contains the source code for the creation of the standard ERC-20 token `SOLV`, with the basic attributes as follows:
 
 - `name`: Solv
 - `symbol`: SOLV

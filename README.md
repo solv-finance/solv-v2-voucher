@@ -1,21 +1,21 @@
 # solv-v2-voucher
 
-Solv Vouchers is the DeFi application for users to customize their financial tools as Vouchers. Through the smart contract of Solv Vouchers, digital assets like tokens could be transformed into Vouchers representing investment allocations as splittable, composable NFTs.
+Solv Vouchers is the DeFi application for users to customize their financial instruments as Vouchers. Through the smart contract of Solv Vouchers, digital assets like tokens could be transformed into Vouchers representing investment allocations as splittable, composable NFTs.
 
-This repository contains the core smart contracts of Solv Protocol V2, along with their configuration files, initialization scripts and deployment information.
+This repository contains the core smart contracts for Solv Protocol V2, along with their configuration files, initialization scripts and deployment information.
 
-For more information about Solv Protocol, please refer to:
+More information about Solv Protocol:
 
 - Official Website: [https://solv.finance](https://solv.finance)
 - Documentation: [https://docs.solv.finance/solv-documentation](https://docs.solv.finance/solv-documentation)
 
 ## Structure
 
-Smart contracts are packaged into four sub-projects, contained in the `packages` directory.
+Smart contracts are packaged into four sub-projects, all contained in the `packages` directory.
 
 ### solv-token
 
-[`solv-token`](./packages/solv-token) contains the smart contract of the standard ERC-20 `SOLV` token.
+[`solv-token`](./packages/solv-token) contains the smart contract of the standard ERC-20 token `SOLV`.
 
 ### solv-vnft-core
 
@@ -29,14 +29,14 @@ By utilizing the VNFT token standard, the smart contracts of `solv-voucher` allo
 
 ### solver
 
-[`solver`](./packages/solver) contains the smart contract of the manager `Solver`, which holds the right to enable/disable Vouchers, as well as verify permissible user actions, such as depositing, withdrawing and transferring.
+[`solver`](./packages/solver) contains the smart contract of the manager `Solver`, which provides abilities to enable/disable Vouchers, as well as verify permissions whether users have or not to proceed operations such as depositing, withdrawing and transferring.
 
 
 ## Install, Deploy and Test
 
 ### Installation
 
-To install Solv V2 Voucher, pull the repository from GitHub and use `yarn` or `npm` to install all dependencies.
+To install Solv V2 Voucher, pull the repository from GitHub and install all dependencies through `yarn` or `npm`.
 
 ```shell
 git clone git@github.com:solv-finance-dev/solv-v2-voucher.git
@@ -52,7 +52,7 @@ npm install
 
 ### Deployment
 
-The deployment of `solv-voucher` depends on the deployment of `solver` and the corresponding underlying token. 
+The deployment of `solv-voucher` depends on the deployment of `solver` and its underlying token. 
 
 - Deploy solv-token
 
@@ -95,7 +95,7 @@ yarn deploy --network `network`
 
 ### Initialization
 
-`solv-voucher` should be initialized after deployed.
+`solv-voucher` should be initialized after its deployment.
 
 ```shell
 cd solv-voucher
@@ -116,11 +116,3 @@ yarn test:localhost
 # for deployment with target network(see: hardhat.config.ts), run:
 yarn test --network `network`
 ```
-
-## Contact us
-
-For any questions or suggestions about the protocol, welcome to contact us via the following ways:
-
-- Open an issue
-- Email: [contact@solv.finance](mailto:contact@solv.finance)
-- Telegram: https://t.me/SolvProtocol

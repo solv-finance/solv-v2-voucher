@@ -1,19 +1,19 @@
 
 # solver
 
-`solver` is designed as the guardian of Solv Vouchers and Solv Vouchers Market, which is responsible for controlling the allowance of operations for any Vouchers and Market.
+`solver` is designed as the guardian of Solv Vouchers and Solv Vouchers Market, which handles permissions for user operations on any Vouchers and Market.
 
 ## Contracts
 
 - [ISolver](./contracts/interface/ISolver.sol)
 
-	- Defines all core interfaces of `solver`
+	- Defines the core interfaces of `solver`
 
 - [Solver](./contracts/Sovler.sol)
 
-	- Implements all `ISolver` interfaces to provide the guard abilities for any Vouchers and Market.
-		- Verify a user's permission to deposit, withdraw, split, merge or transfer any Vouchers.
-		- Verify a user's permission to publish orders, cancel orders or trade in any market.
+	- Implements all `ISolver` interfaces to provide the guardian abilities for any Vouchers and Market.
+		- Verify permissions for users to deposit, withdraw, split, merge or transfer any Vouchers.
+		- Verify permissions for users to publish orders, cancel orders or trade in any market.
 
 		
 ## Deployment
