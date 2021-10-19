@@ -116,3 +116,30 @@ yarn test:localhost
 # for deployment with target network(see: hardhat.config.ts), run:
 yarn test --network `network`
 ```
+
+## Bug Bounty
+
+The Solv Protocol bug bounty program is focused on the smart contracts and is focused on preventing:
+
+- Loss of user funds staked (principal) by freezing or theft
+- Theft of unclaimed yield
+- Freezing of unclaimed yield
+- Smart contract fails to deliver promised returns
+
+### Rewards by threat level
+
+Rewards are distributed according to the impact of the vulnerability based on the Immunefi Vulnerability Severity Classification System.
+
+#### Smart Contracts and Blockchain
+
+| Threat Level | Bounty |
+| :--- | :--- |
+| Critical | USD $50,000 |
+| High | USD $25,000 |
+| Medium | USD $10,000 |
+| Low | USD $3,000 |
+
+
+All Critical/High severity bug reports must come with a PoC and a suggestion for a fix in order to be considered for a reward.
+
+Payouts are handled by the Solv Protocol team directly and are denominated in USD. Payouts are done in USDT.
