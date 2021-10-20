@@ -119,7 +119,10 @@ yarn test --network `network`
 
 ## Bug Bounty
 
-The Solv Protocol bug bounty program is focused on the smart contracts and is focused on preventing:
+The Solv Protocol bug bounty program is on the Immunefi platform and can be accessed at:
+[https://www.immunefi.com/bounty/solvprotocol](https://www.immunefi.com/bounty/solvprotocol)
+
+The bug bounty program is focused on the smart contracts and focused on preventing:
 
 - Loss of user funds staked (principal) by freezing or theft
 - Theft of unclaimed yield
